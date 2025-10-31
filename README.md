@@ -20,6 +20,8 @@ O projeto busca transmitir a **elegância e tradição** da vinícola por meio d
 - **processo.html** → Seção com fotos e vídeos sobre o processo de produção.  
 - **contato.html** → Formulário de contato para visitantes e clientes.  
 - **style.css** → Arquivo principal de estilos, incluindo efeitos visuais e interativos.  
+- **quiz.js** → Quiz interativo com os usuarios.  
+
 
 ---
 

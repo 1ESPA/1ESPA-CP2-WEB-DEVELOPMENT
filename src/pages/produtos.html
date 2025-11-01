@@ -7,6 +7,9 @@
   <meta name="description" content="Conheça os vinhos da Vinharia Agnello - tradição e qualidade em cada garrafa">
   <meta name="keywords" content="vinhos, produtos, vinhos tintos, vinhos brancos, Vinharia Agnello">
   <title>Produtos - Vinharia Agnello</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -122,7 +125,43 @@
     </main>
 
     <footer>
-      <p>&copy; 2025 Vinharia Agnello - Todos os direitos reservados</p>
+      <div class="footer-grid">
+        <div class="footer-contatos">
+          <img src="./src/assets/imgs/LogoVinheria1.png" alt="">
+          <ul class="footer-media">
+            <li><i class="fa-brands fa-instagram"></i>: <a href="https://www.instagram.com/c4stilho_"
+                target="_blank">Bruno Castilho</a>, <a href="https://www.instagram.com/_.murilosz_"
+                target="_blank">Murilo Jeronimo</a>, <a href="" target="_blank">Pedro Olavo</a></li>
+            <li><i class="fa-brands fa-whatsapp"></i>: Vinharia Agnello – (11) 4002-8427</li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li>FAQ</li>
+            <li>Termos e Condições</li>
+            <li>Suporte ao Cliente</li>
+            <li>Trabalhe Conosco</li>
+          </ul>
+        </div>
+        <div class="footer-cores">
+          <h3>Mude as cores do nosso site:</h3>
+          <button onclick="mudarCor('padrao')">Tema Padrão</button>
+          <button onclick="mudarCor('claro')">Tema Claro</button>
+          <button onclick="mudarCor('escuro')">Tema Escuro</button>
+          <button onclick="mudarCor('vinho')">Tema Vinho</button>
+        </div>
+        <div class="footer-email">
+          <h1>Se Inscreva!</h1>
+          <p>Não perca nenhuma novidade sobre a Vinharia Agnello!</p>
+          <div class="footer-input">
+            <input type="email" id="email" placeholder="Seu e-mail">
+            <button><i class="fa-solid fa-envelope"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2025 Vinharia Agnello - Todos os direitos reservados</p>
+      </div>
     </footer>
   </div>
 </body>

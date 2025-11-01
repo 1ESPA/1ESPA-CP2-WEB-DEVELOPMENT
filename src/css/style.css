@@ -14,7 +14,8 @@
     --cor-secundaria: #f0e6d2;
     --cor-texto: #333333;
     --cor-destaque: #c9a959;
-    --cor-navbar: #1E1E1C;
+    --cor-navbar: #1e1e1cea;
+    --cor-fundo: var(--cor-secundaria);
 
     --fonte: 'Poppins', sans-serif;
 }
@@ -29,8 +30,9 @@
 
 body {
     font-family: var(--fonte);
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-fundo);
     color: var(--cor-texto);
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 h1,
@@ -51,8 +53,6 @@ main {
     max-width: 1100px;
     margin: 24px auto;
     padding: 0 16px;
-    display: grid;
-    gap: 24px;
 }
 
 main h2,
@@ -84,7 +84,7 @@ main p {
 
 header {
     width: 100%;
-    background-color: #1E1E1C;
+    background-color: var(--cor-navbar);
 }
 
 .navbar {
@@ -92,6 +92,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 9vh;
 }
 
 .navbar ul {
@@ -107,16 +108,135 @@ header {
     font-size: 16px;
 }
 
+
 /* Estilos Footer */
 
 footer {
-    background-color: var(--cor-navbar);
-    color: #d4d4d4;
-    text-align: center;
-    padding: 20px 0;
     width: 100%;
-    margin-top: 40px;
+    color: #d4d4d4;
 }
+
+.footer-grid {
+    background-color: var(--cor-navbar);
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 56px;
+}
+
+.fa-brands {
+    font-size: 14px;
+}
+
+.footer-media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    letter-spacing: 1px;
+}
+
+.footer-media a {
+    color: #d4d4d4;
+}
+
+.footer-contatos img {
+    margin-bottom: 28px;
+    margin-left: 12px;
+    width: 150px;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-cores {
+    /* 2x2 grade para os botões */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 150px));
+    gap: 16px;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-cores button {
+    appearance: none;
+    border: 2px solid var(--cor-destaque);
+    background: transparent;
+    color: #d4d4d4;
+    padding: 10px 16px;
+    border-radius: 1000px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    min-width: 140px;
+    width: 100%;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.footer-cores button:hover {
+    background-color: var(--cor-destaque);
+    color: #1E1E1C;
+    transform: scale(1.05);
+    box-shadow: 0 8px 22px rgba(201, 169, 89, 0.35);
+}
+
+.footer-cores h3 {
+    color: #d4d4d4;
+    /* título ocupa as duas colunas acima dos botões */
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.footer-email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-email h1 {
+    color: #d4d4d4;
+}
+
+.footer-email p {
+    opacity: 0.7;
+}
+
+.footer-input {
+    display: flex;
+    background-color: #d4d4d4;
+    border-radius: 8px;
+}
+
+.footer-input input {
+    all: unset;
+    padding: 6px;
+    width: 100%;
+    color: #000000;
+}
+
+.footer-input button {
+    border: none;
+    padding: 0px 10px;
+    font-size: 18px;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.footer-input button:hover {
+    opacity: 0.8;
+}
+.footer-copyright {
+    background-color: #1e1e1c;
+    display: flex;
+    justify-content: center;
+}
+
 
 
 /* Formulário de Contato */
@@ -339,6 +459,7 @@ footer {
 
 .historia h2 {
     margin-bottom: 12px;
+    text-align: center;
 }
 
 .historia h3 {
@@ -450,7 +571,6 @@ input[type="checkbox"]:checked + label {
 }
 
 /* ::after — linha decorativa */
-h1::after,
 h2::after {
     content: "";
     display: block;
@@ -497,6 +617,13 @@ h2::after {
 .quiz-container {
   text-align: center;
   padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quiz-container h3 {
+    color: var(--cor-texto);
 }
 
 .quiz-card {
@@ -565,3 +692,6 @@ h2::after {
   background-color: #f7d77a;
   transform: scale(1.05);
 }
+
+
+

@@ -692,6 +692,46 @@ h2::after {
   background-color: #f7d77a;
   transform: scale(1.05);
 }
+.carrossel {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.carrossel-container {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carrossel-imagens img {
+  width: 100%;
+  display: none;
+  border-radius: 12px;
+}
+
+.carrossel .btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+.anterior {
+  left: 10px;
+}
+
+.proximo {
+  right: 10px;
+}
+
 
 
 

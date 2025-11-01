@@ -30,51 +30,17 @@
     </header>
 
     <main>
-      <div class="processos">
-        <section class="processos-intro">
-          <h1>Nosso Processo de Produção</h1>
-          <p>
-            Na Vinharia Agnello, cada garrafa é resultado de dedicação, tradição e paixão pelo vinho.
-            Conheça as etapas que transformam as uvas cuidadosamente selecionadas em vinhos de excelência.
-          </p>
-        </section>
-        <div class="cards">
-          <section class="colheita card">
-            <h2>1. Colheita</h2>
-            <p>Selecionamos manualmente as uvas mais maduras e saudáveis diretamente dos vinhedos.</p>
-            <ul>
-              <li>Colheita realizada no ponto ideal de maturação.</li>
-              <li>Uvas tratadas com cuidado para não danificar o fruto.</li>
-            </ul>
-            <img src="../assets/imgs/colheita.png" alt="colheita" class="colheita-img">
-          </section>
-          <section class="fermentacao card">
-            <h2>2. Fermentação</h2>
-            <p>Transformamos o mosto em vinho com fermentação controlada.</p>
-            <ul>
-              <li>Fermentação natural com leveduras selecionadas.</li>
-              <li>Controle de temperatura para preservar o sabor.</li>
-            </ul>
-            <img src="../assets/imgs/fermentacao.png" alt="Fermentação" class="fermentacao-img">
-          </section>
-          <section class="envelhecimento card">
-            <h2>3. Envelhecimento</h2>
-            <p>O vinho amadurece em barris de carvalho, adquirindo corpo, aroma e complexidade.</p>
-            <ul>
-              <li>Uso de barris selecionados para cada tipo de vinho.</li>
-              <li>Período controlado para alcançar o sabor ideal.</li>
-            </ul>
+      <section class="carrossel">
+        <h2>Galeria do Processo</h2>
+        <div class="carrossel-container">
+          <button class="btn anterior">&#10094;</button>
+          <div class="carrossel-imagens">
+            <img src="../assets/imgs/colheita.png" alt="Colheita">
+            <img src="../assets/imgs/fermentacao.png" alt="Fermentação">
             <img src="../assets/imgs/envelhecimento.png" alt="Envelhecimento">
-          </section>
-          <section class="engarrafamento card">
-            <h2>4. Engarrafamento</h2>
-            <p>O vinho é cuidadosamente filtrado e engarrafado para chegar ao consumidor com máxima qualidade.</p>
-            <ul>
-              <li>Verificação de qualidade antes do envase.</li>
-              <li>Garrafas armazenadas corretamente.</li>
-            </ul>
             <img src="../assets/imgs/engarrafamento.png" alt="Engarrafamento">
-          </section>
+          </div>
+          <button class="btn proximo">&#10095;</button>
         </div>
       </div>
 
@@ -129,6 +95,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="../js/carrosel.js"></script>
 </body>
 
 </html>

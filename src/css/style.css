@@ -152,6 +152,10 @@ footer {
     justify-content: center;
 }
 
+.footer-list a {
+    color: #d4d4d4;
+}
+
 .footer-cores {
     /* 2x2 grade para os botões */
     display: grid;
@@ -231,6 +235,7 @@ footer {
 .footer-input button:hover {
     opacity: 0.8;
 }
+
 .footer-copyright {
     background-color: #1e1e1c;
     display: flex;
@@ -289,7 +294,7 @@ footer {
     color: var(--cor-texto);
 }
 
-.mensagem{
+.mensagem {
     height: 40px;
 }
 
@@ -310,6 +315,10 @@ footer {
 }
 
 /* Produtos */
+
+.produtos-container h2 {
+    text-align: center;
+}
 .produtos-container {
     max-width: 1100px;
     margin: 15px auto;
@@ -345,26 +354,46 @@ footer {
 }
 
 .produto {
-    margin-top: 24px;
+    margin-top: 20px;
     background: var(--cor-secundaria);
     border-radius: 10px;
-    padding: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .produtos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(6, minmax(230px, 1fr));
     gap: 16px;
+    justify-content: center;
+    align-items: start;
 }
 
+
+.produto-texto {
+    text-align: center;
+    line-height: 1;
+    min-height: 35px;
+    overflow: hidden;
+    margin-top: 12px;
+    
+}
+
+.produto p {
+    text-align: center;
+}
 .produto img {
     width: 100%;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 8px;
 }
 
 .btn-comprar {
+    border: none;
     margin-top: 8px;
     width: 100%;
     padding: 10px 14px;
@@ -539,7 +568,7 @@ footer {
     transition: 0.2s ease;
 }
 
-.mensagem{
+.mensagem {
     height: 40px;
     transition: all 0.5s;
 }
@@ -559,7 +588,7 @@ footer {
 }
 
 /* :checked — para checkboxes */
-input[type="checkbox"]:checked + label {
+input[type="checkbox"]:checked+label {
     color: var(--cor-primaria);
     font-weight: 600;
 }
@@ -615,11 +644,11 @@ h2::after {
 
 /* ====== QUIZ VINHARIA ====== */
 .quiz-container {
-  text-align: center;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    text-align: center;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .quiz-container h3 {
@@ -627,111 +656,108 @@ h2::after {
 }
 
 .quiz-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  max-width: 500px;
-  transition: 0.3s ease;
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 500px;
+    transition: 0.3s ease;
 }
 
 .quiz-card h2 {
-  color: var(--cor-primaria);
-  margin-bottom: 16px;
+    color: var(--cor-primaria);
+    margin-bottom: 16px;
 }
 
 .opcoes {
-  display: grid;
-  gap: 10px;
+    display: grid;
+    gap: 10px;
 }
 
 .btn-opcao {
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  background-color: var(--cor-primaria);
-  color: #fff;
-  cursor: pointer;
-  font-weight: 600;
-  transition: 0.3s ease;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
 .btn-opcao:hover {
-  background-color: #6f0d22;
-  transform: scale(1.03);
+    background-color: #6f0d22;
+    transform: scale(1.03);
 }
 
 .quiz-resultado {
-  background: #fff;
-  border-radius: 12px;
-  padding: 24px;
-  max-width: 500px;
-  margin: 0 auto;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .quiz-resultado h2 {
-  color: var(--cor-destaque);
-  margin-bottom: 12px;
+    color: var(--cor-destaque);
+    margin-bottom: 12px;
 }
 
 .btn-reiniciar {
-  margin-top: 16px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  background-color: var(--cor-destaque);
-  color: #1E1E1C;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.3s ease;
+    margin-top: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--cor-destaque);
+    color: #1E1E1C;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .btn-reiniciar:hover {
-  background-color: #f7d77a;
-  transform: scale(1.05);
+    background-color: #f7d77a;
+    transform: scale(1.05);
 }
+
 .carrossel {
-  text-align: center;
-  margin-top: 40px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .carrossel-container {
-  position: relative;
-  width: 80%;
-  max-width: 700px;
-  margin: auto;
-  overflow: hidden;
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
 }
 
 .carrossel-imagens img {
-  width: 100%;
-  display: none;
-  border-radius: 12px;
+    width: 550px;
+    display: none;
+    border-radius: 12px;
 }
 
 .carrossel .btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 2rem;
-  padding: 10px 15px;
-  border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 10px 15px;
+    border-radius: 50%;
 }
 
 .anterior {
-  left: 10px;
+    left: 10px;
 }
 
 .proximo {
-  right: 10px;
+    right: 10px;
 }
-
-
-
-

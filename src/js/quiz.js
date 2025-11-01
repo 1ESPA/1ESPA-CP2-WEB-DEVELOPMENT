@@ -70,11 +70,11 @@ function mostrarResultado() {
   let mensagem = "";
 
   if (pontuacao <= 2) {
-    mensagem = "Você combina com vinhos **suaves e leves**, ideais para momentos descontraídos.";
+    mensagem = "Você combina com vinhos suaves e leves, ideais para momentos descontraídos.";
   } else if (pontuacao <= 4) {
-    mensagem = "Você combina com vinhos **refinados e equilibrados**, perfeitos para um jantar especial.";
+    mensagem = "Você combina com vinhos refinados e equilibrados, perfeitos para um jantar especial.";
   } else {
-    mensagem = "Você é um verdadeiro apreciador — vinhos **encorpados e marcantes** são a sua cara!";
+    mensagem = "Você é um verdadeiro apreciador — vinhos encorpados e marcantes são a sua cara!";
   }
 
   quizContainer.innerHTML = `

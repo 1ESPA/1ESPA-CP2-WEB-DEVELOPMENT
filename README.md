@@ -75,5 +75,5 @@ Foram aplicadas transições em links, botões e campos de formulário para cria
 ---
 
 ## 🌐 GitHub Pages
-🔗 [Acesse o site publicado aqui](https://1espa.github.io/1ESPA-CP2-WEB-DEVELOPMENThttps://1espa.github.io/1ESPA-CP2-WEB-DEVELOPMENT)
+🔗 [Acesse o site publicado aqui](https://1espa.github.io/1ESPA-CP2-WEB-DEVELOPMENT)
 

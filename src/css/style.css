@@ -264,7 +264,7 @@ footer {
 }
 
 .contato-intro {
-    color: var(--cor-texto);
+    color: #333333;
     margin-bottom: 22px;
 }
 
@@ -736,7 +736,7 @@ h2::after {
 }
 
 .carrossel-imagens img {
-    width: 550px;
+    width: 580px;
     display: none;
     border-radius: 12px;
 }
